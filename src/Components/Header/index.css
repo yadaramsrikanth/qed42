@@ -1,0 +1,32 @@
+.nav-bar-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin:20px 50px 10px 50px;
+}
+.e-commerce-heading-logo{
+    font-size: 24px;
+    color: black;
+    font-family: "Roboto";
+}
+.nav-menu{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-item{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Roboto";
+}
+.link-item{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Roboto";
+}

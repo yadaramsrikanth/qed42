@@ -1,0 +1,29 @@
+.product-item-card{
+    width: 32%;
+
+}
+.product-image{
+    width: 50%;
+    height: 30%;
+}
+.title{
+    font-size: 24px;
+    font-family: "Roboto";
+    width: 70%;
+    color: #0a3131;
+
+}
+.category{
+    color:rgb(17, 17, 17);
+    font-size: 18px;
+    font-weight: 400;
+}
+.price{
+    color: rgb(2, 20, 20);
+    font-weight: 600;
+    font-size: 28px;
+}
+.product-link-item{
+    text-decoration: none;
+    display:inline-block;
+}

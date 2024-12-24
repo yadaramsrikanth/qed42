@@ -1,0 +1,31 @@
+.home-container{
+    margin: 40px 50px 25px 120px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.home-content{
+    margin: 40px 20px 10px 50px;
+    width: 45%;
+}
+.home-heading{
+    font-size: 40px;
+    color: darkslategrey;
+}
+.home-para{
+    font-size: 18px;
+    color: rgb(105, 104, 104);
+}
+.home-page-button{
+    background-color: rgb(55, 55, 247);
+    color: white;
+    border: none;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 15px;
+    border-radius: 8px;
+}
+.home-page-image{
+    width: 45%;
+    height: 20%;
+}
