@@ -49,3 +49,36 @@
    
     margin-left: 100px;
 }
+.filters-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.search-container{
+    background-color:rgb(201, 235, 223);
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 8px;
+    margin: 0px 5px 0px 8px;
+}
+.input-element{
+    border: none;
+    background-color: transparent;
+    font-size: 18px;
+    color:black;
+    font-weight: 400;
+    outline: none;
+}
+.search-button{
+    background-color: transparent;
+    border: none;
+}
+.category-options-select{
+    padding: 8px;
+    font-size: 18px;
+    border-radius: 5px;
+    margin: 0px 5px 0px 5px;
+}
+.option-name{
+    font-size:15px;
+}
