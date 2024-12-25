@@ -12,7 +12,7 @@ const apiStatusConstants={
 
 
 const Products=()=>{
-    const [apiStatus,setApiStatus]=useState(apiStatusConstants.failure)
+    const [apiStatus,setApiStatus]=useState(apiStatusConstants.initial)
     const [productsList,setProductsList]=useState([])
   
 const getProductsList=async()=>{

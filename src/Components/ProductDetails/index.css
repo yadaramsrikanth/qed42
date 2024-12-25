@@ -1,0 +1,80 @@
+.product-details-view-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 30px 10px 20px 10px;
+}
+.description-image{
+    width: 38%;
+    margin-right:30px;
+    
+}
+.product-details{
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    width: 50%;
+}
+.rating-contaier{
+    background-color: rgb(62, 62, 243);
+    width: 80px;
+    height: 30px;
+    color: white;
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+.rating{
+    font-weight: 500;
+    font-size: 18px;
+    margin-right: 10px;
+}
+.product-details-title{
+    font-weight: 35px;
+    font-weight: 600;
+    margin-bottom: 0px;
+    color: rgb(2, 57, 61);
+}
+.product-details-price{
+    font-weight: bold;
+    font-size: 25px;
+    margin: 5px 0px 8px;
+}
+.product-details-description{
+    font-size: 18px;
+    color: rgb(22, 20, 20);
+    margin: 8px 0px 8px;
+}
+.product-details-category{
+    font-size: 24px;
+    font-weight: 500;
+    color: gray;
+    margin: 0px 5px 0px 0px;
+}
+.horizontal-line{
+    width: 100%;
+}
+.buttons-container{
+    width: 90px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.decrement-button{
+    background-color: transparent;
+    border: none;
+}
+.add-to-cart{
+    background-color: rgb(64, 64, 243);
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    width: 150px;
+    padding: 10px;
+
+}

@@ -1,5 +1,7 @@
 import {useState,useEffect,useCallback} from "react"
 import { ThreeDots } from "react-loader-spinner"
+import { BsStar,BsPlusSquare, BsDashSquare} from "react-icons/bs";
+
 import Header from "../Header"
 import "./index.css"
 
@@ -16,6 +18,16 @@ const apiStatusConstants={
 const ProductDetails=(props)=> {
 const [apiStatus,setApiStatus]=useState(apiStatusConstants.initial)
 const [item,setItem]=useState({})
+const [quantity,setQuantity]=useState(1)
+
+const decrementQuantity=()=>{
+    if (quantity>1){
+        setQuantity(quantity-1)
+    }
+}
+
+const incremenetQuantity=()=>setQuantity(quantity+1)
+
 const {match}=props
 const {params}=match
 const {id}=params
@@ -42,7 +54,30 @@ useEffect(()=>{
 const retryProductsDetailsView=()=>getProductDetails()
 
 
-const renderProductsDetailsSuccessView=()=><h1>renderProductsDetailsSuccessView</h1>
+const renderProductsDetailsSuccessView=()=>{
+    const {title,description,price,rating,category,image}=item
+    const {rate}=rating
+    return <div className="product-details-view-container">
+        <img src={image} alt={title} className="description-image"/>
+        <div className="product-details">
+            <h1 className="product-details-title">{title}</h1>
+            <p className="product-details-price">Rs {price} /-</p>
+            <div className="rating-contaier">
+              <p className="rating">{rate}</p>
+              <BsStar />
+            </div>
+            <p className="product-details-description">{description}</p>
+            <p className="product-details-category">{category}</p>
+            <hr className="horizontal-line"/>
+            <div className="buttons-container">
+             <button className="decrement-button" onClick={decrementQuantity}><BsDashSquare/></button>   
+                <p>{quantity}</p>
+                <button className="decrement-button" onClick={incremenetQuantity}><BsPlusSquare/></button> 
+            </div>
+            <button type="button" className="add-to-cart">ADD TO CART</button>
+        </div>
+    </div>
+}
 
 const renderProductsDetailsLoadingView=()=><div className="products-loader-spinner">
     <ThreeDots color="#0b69ff" height="50" width="50"/>
