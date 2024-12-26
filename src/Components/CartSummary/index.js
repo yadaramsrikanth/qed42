@@ -8,7 +8,7 @@ const CartSummary=()=>{
     cartList.forEach((item)=>{
         total+=item.quantity*item.price
     })
-    return <div className="cart-list_summary">
+    return <div className="cart-list-summary">
         
         <h1 className="order-details">Order total: <span className="total-amount">Rs {total} /-</span></h1>
         <p className="items-in-cart">{cartList.length} Items in cart</p>
