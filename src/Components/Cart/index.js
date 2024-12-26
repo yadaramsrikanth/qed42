@@ -3,6 +3,7 @@ import Header from "../Header"
 import React,{useContext} from "react"
 import CartContext from "../../context/CartContext"
 import CartItem from "../CartItem"
+import CartSummary from "../CartSummary"
 
 const Cart=()=>{
 
@@ -20,7 +21,7 @@ const Cart=()=>{
 </Link>
 
 </div>:<CartItem />}
-
+{cartListLength?null:<div><CartSummary/></div>}
     </>)
 }
 

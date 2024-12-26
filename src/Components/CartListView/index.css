@@ -20,3 +20,7 @@
     background-color: transparent;
     border: none;
 }
+.total-price-cart{
+    font-weight: 800;
+    font-size: 25px;
+}

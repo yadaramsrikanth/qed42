@@ -26,7 +26,7 @@ const onclickDecrementQuantity=()=>{
         <p>{quantity}</p>
         <button className="decrement-button" onClick={onclickIncremntQuantity}><BsPlusSquare/></button> 
         </div>
-        <p>Rs {quantity*price} /-</p>
+        <p className="total-price-cart">Rs {quantity*price} /-</p>
         <button type="button" className="delete-button" onClick={onClickRemoveCartItem}><AiFillCloseCircle/></button>
     </li>
 }
