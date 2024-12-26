@@ -30,3 +30,11 @@
     font-weight: 400;
     font-family: "Roboto";
 }
+.cart-items-count{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: rgb(212, 245, 247);
+    padding: 10px;
+    color:crimson;
+}

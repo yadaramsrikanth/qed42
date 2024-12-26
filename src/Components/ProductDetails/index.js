@@ -1,6 +1,7 @@
-import {useState,useEffect,useCallback} from "react"
+import React,{useState,useEffect,useCallback,useContext} from "react"
 import { ThreeDots } from "react-loader-spinner"
 import { BsStar,BsPlusSquare, BsDashSquare} from "react-icons/bs";
+import CartContext from "../../context/CartContext";
 
 import Header from "../Header"
 import "./index.css"
@@ -19,6 +20,12 @@ const ProductDetails=(props)=> {
 const [apiStatus,setApiStatus]=useState(apiStatusConstants.initial)
 const [item,setItem]=useState({})
 const [quantity,setQuantity]=useState(1)
+const {addcartItem}=useContext(CartContext)
+
+
+const onclickToaddCart=()=>{
+    addcartItem({...item,quantity})
+}
 
 const decrementQuantity=()=>{
     if (quantity>1){
@@ -74,7 +81,7 @@ const renderProductsDetailsSuccessView=()=>{
                 <p>{quantity}</p>
                 <button className="decrement-button" onClick={incremenetQuantity}><BsPlusSquare/></button> 
             </div>
-            <button type="button" className="add-to-cart">ADD TO CART</button>
+            <button type="button" className="add-to-cart" onClick={onclickToaddCart}>ADD TO CART</button>
         </div>
     </div>
 }
